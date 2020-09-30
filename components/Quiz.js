@@ -66,6 +66,10 @@ const Quiz = {
       if (currentQuestionIndex === currentQuestionObj.length - 1) {
         const score = Object.values(results).reduce((acc, val) => acc + val, 0);
         router({ pathname: "/results" }, { score });
+        currentQuestionIndex = 0;
+        selectedLevel = null;
+        currentQuestionObj = null;
+        results = {};
       } else {
         currentQuestionIndex++;
         Quiz.render();
