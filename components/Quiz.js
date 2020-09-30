@@ -65,7 +65,7 @@ const Quiz = {
       }
       if (currentQuestionIndex === currentQuestionObj.length - 1) {
         const score = Object.values(results).reduce((acc, val) => acc + val, 0);
-        alert(`Quiz finished! Score: ${score}`);
+        router({ pathname: "/results" }, { score });
       } else {
         currentQuestionIndex++;
         Quiz.render();

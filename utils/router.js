@@ -1,6 +1,7 @@
 import LevelSelect from "../components/LevelSelect.js";
 import Quiz from "../components/Quiz.js";
 import NotFound from "../components/NotFound.js";
+import Results from "../components/Results.js";
 
 const root = document.getElementById("root");
 root.innerHTML = `<div class="app_wrapper"></div>`;
@@ -10,6 +11,7 @@ let currentComponent = LevelSelect;
 const views = {
   "/#/": LevelSelect,
   "/#/quiz": Quiz,
+  "/#/results": Results,
 };
 
 export const router = (location, data) => {

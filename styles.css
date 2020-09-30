@@ -87,6 +87,7 @@ p {
 .question__wrapper {
   width: 90%;
   margin: 2rem auto 2rem auto;
+  min-height: 40vh;
 }
 
 .question__wrapper img {
@@ -95,6 +96,27 @@ p {
 
 button.recording {
   color: red;
+}
+
+.results__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results__wrapper h3 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+
+.results__score {
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+
+.results__back {
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -110,11 +132,9 @@ button.recording {
     width: 60%;
     margin: 3rem auto 3rem auto;
   }
-
   .levelSelect__field {
     margin: 2rem 0;
   }
-
   button {
     padding: 0.5rem 1rem;
     font-size: 2.5rem;
@@ -123,6 +143,17 @@ button.recording {
   p {
     font-size: 1.5rem;
     margin: 2rem auto 2rem auto;
+  }
+  .results__wrapper h3 {
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
+  .results__score {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+  .results__back {
+    margin-top: 6rem;
   }
 }
 
@@ -151,5 +182,16 @@ button.recording {
   }
   p {
     font-size: 1.2rem;
+  }
+  .results__wrapper h3 {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .results__score {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+  .results__back {
+    margin-top: 3rem;
   }
 }
