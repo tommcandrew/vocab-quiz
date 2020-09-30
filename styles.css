@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100vh;
+}
+
+#root {
+  background-color: #eee;
+  padding: 2rem 0;
+  background: rgb(66, 95, 173);
+}
+
+h1 {
+  color: rgb(255, 255, 0);
+  font-size: 2.5rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+}
+
+button {
+  padding: 0.3rem 0.7rem;
+  font-size: 1.5rem;
+  border-radius: 35px;
+  background: rgb(40, 76, 173);
+  display: block;
+  margin: 0 auto;
+  background: rgb(255, 255, 0);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 100px;
+  outline: none;
+}
+
+.levelSelect__levels {
+  background: rgb(151, 169, 218);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: 3rem auto 2rem auto;
+}
+
+.levelSelect__field {
+  display: flex;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 65%;
+}
+
+p {
+  width: 90%;
+  color: #eee;
+  margin: 1rem auto 0 auto;
+  text-align: center;
+}
+
+.quiz__buttons {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.question__wrapper {
+  width: 90%;
+  margin: 2rem auto 2rem auto;
+}
+
+.question__wrapper img {
+  width: 100%;
+}
+
+button.recording {
+  color: red;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+  }
+  .levelSelect__levels {
+    font-size: 2rem;
+    width: 60%;
+    margin: 3rem auto 3rem auto;
+  }
+
+  .levelSelect__field {
+    margin: 2rem 0;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 2.5rem;
+    min-width: 150px;
+  }
+  p {
+    font-size: 1.5rem;
+    margin: 2rem auto 2rem auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .levelSelect__levels {
+    font-size: 1.5rem;
+    width: 30%;
+    margin: 3rem auto 3rem auto;
+  }
+  button {
+    font-size: 1.5rem;
+    min-width: 120px;
+  }
+  .question__wrapper {
+    width: 30%;
+  }
+  .quiz__buttons {
+    width: 40%;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
